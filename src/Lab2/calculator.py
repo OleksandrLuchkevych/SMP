@@ -1,5 +1,4 @@
-from action import Action
-
+from .action import Action
 
 class Calculator(Action):
     def __init__(self, number1: float = 0, number2: float = 0, operator: str = "+"):

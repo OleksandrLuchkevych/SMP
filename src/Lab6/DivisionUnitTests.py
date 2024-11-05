@@ -1,7 +1,7 @@
 import random
 import string
 import unittest
-from Lab2.calculator import Calculator
+from src.Lab2.calculator import Calculator
 
 
 class CalculatorDivisionUnitTests(unittest.TestCase):
