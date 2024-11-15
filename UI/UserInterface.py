@@ -47,12 +47,12 @@ class UserInterface:
         print(f"Дані збережені у файлах {filename_base}.json, {filename_base}.csv та {filename_base}.txt.")
 
     def view_history(self):
-        if os.path.exists("history.txt"):
-            with open("history.txt", "r") as file:
+        if os.path.exists("./source/history.txt"):
+            with open("./source/history.txt", "r") as file:
                 print(file.read())
         else:
             print("Історія порожня.")
 
     def log_history(self, data):
-        with open("history.txt", "a") as file:
+        with open("./source/history.txt", "a") as file:
             file.write(f"{datetime.now()}: {data}\n")
